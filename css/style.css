@@ -132,3 +132,15 @@ h2 { margin: 0; font-size: 21px; line-height: 1.25; }
   .theme-toggle { min-height: 34px; padding: 0 9px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+.dark-mode header,
+.dark-mode .card,
+.dark-mode .task-card {
+    background: #1f2937;
+    color: #f9fafb;
+}
