@@ -30,7 +30,9 @@ assets/empty-state.svg
 assets/favicon.svg
 README.md
 ```
+## Project Status
 
+TaskFlow is a simple task management application developed for demonstrating Git and GitHub workflows.
 ## Git and GitHub practice
 
 A possible exercise sequence:
