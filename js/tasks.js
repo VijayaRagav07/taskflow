@@ -6,7 +6,12 @@
   const categoryFilter = document.querySelector('#category-filter');
   const resultCount = document.querySelector('#task-result-count');
   const form = document.querySelector('[data-add-task-form]');
+  const searchText = searchInput.value.toLowerCase();
 
+  const filteredTasks = tasks.filter(task =>
+    task.title.toLowerCase().includes(searchText) ||
+    task.category.toLowerCase().includes(searchText)
+);
   function refresh() {
     const query = searchInput.value.trim().toLowerCase();
     const category = categoryFilter.value;
