@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f4">
+  <title>TaskFlow | All Tasks</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tasks.css">
+  <script src="js/app.js" defer></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/tasks.js" defer></script>
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>TaskFlow</span></a>
+      <p class="nav-label">WORKSPACE</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html"><span class="nav-icon">⌂</span>Today</a>
+        <a class="nav-link" href="dashboard.html"><span class="nav-icon">▦</span>Dashboard</a>
+        <a class="nav-link is-active" href="tasks.html" aria-current="page"><span class="nav-icon">☷</span>All tasks</a>
+        <a class="nav-link" href="about.html"><span class="nav-icon">i</span>About</a>
+      </nav>
+      <div class="sidebar-note"><span class="note-mark">✳</span><p>Make room for<br><strong>what matters.</strong></p></div>
+      <p class="sidebar-caption">YOUR PERSONAL SPACE</p>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><p class="topbar-date">YOUR TASK SPACE</p><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">◐ <span>Theme</span></button></header>
+      <div class="page-content">
+        <section class="tasks-heading">
+          <div><p class="eyebrow">MAKE A LITTLE PROGRESS</p><h1>All tasks<span class="title-period">.</span></h1><p class="page-intro">Find it, finish it, or make space for something new.</p></div>
+          <p class="task-count-chip"><strong id="task-result-count">0</strong> tasks shown</p>
+        </section>
+        <section class="surface task-workspace" aria-label="Manage tasks">
+          <form class="add-task-form task-add-form" data-add-task-form>
+            <label for="task-title">Add a task</label>
+            <div class="task-toolbar task-add-row">
+              <input id="task-title" name="title" type="text" placeholder="Write down what needs doing" maxlength="120" required>
+              <select id="task-category" name="category" aria-label="Task category"><option>Personal</option><option>College</option><option>Work</option></select>
+              <button class="button-primary" type="submit">Add task <span aria-hidden="true">+</span></button>
+            </div>
+          </form>
+          <div class="task-toolbar" role="search">
+            <div class="search-wrap"><span class="search-mark" aria-hidden="true">⌕</span><label class="visually-hidden" for="task-search">Search tasks</label><input id="task-search" class="task-search" type="search" placeholder="Search your tasks..."></div>
+            <label class="visually-hidden" for="category-filter">Filter by category</label><select id="category-filter" class="category-filter"><option value="all">All categories</option><option value="Personal">Personal</option><option value="College">College</option><option value="Work">Work</option></select>
+            <span class="task-toolbar-label">Search or filter your list</span>
+          </div>
+          <ul class="task-list tasks-list-view" id="all-task-list" aria-label="All tasks"></ul>
+          <div class="empty-state" id="tasks-empty" hidden><img src="assets/empty-state.svg" alt=""><p>No tasks match this view.</p></div>
+        </section>
+        <footer class="page-footer">Your list stays on this device<span class="footer-dot">.</span></footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f4">
+  <title>TaskFlow | About</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>TaskFlow</span></a>
+      <p class="nav-label">WORKSPACE</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html"><span class="nav-icon">⌂</span>Today</a>
+        <a class="nav-link" href="dashboard.html"><span class="nav-icon">▦</span>Dashboard</a>
+        <a class="nav-link" href="tasks.html"><span class="nav-icon">☷</span>All tasks</a>
+        <a class="nav-link is-active" href="about.html" aria-current="page"><span class="nav-icon">i</span>About</a>
+      </nav>
+      <div class="sidebar-note"><span class="note-mark">✳</span><p>Make room for<br><strong>what matters.</strong></p></div>
+      <p class="sidebar-caption">YOUR PERSONAL SPACE</p>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><p class="topbar-date">A NOTE ABOUT TASKFLOW</p><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">◐ <span>Theme</span></button></header>
+      <div class="page-content">
+        <section class="welcome-row"><div><p class="eyebrow">SIMPLE TASKS. BETTER DAYS.</p><h1>A calmer way to<br>get things done<span class="title-period">.</span></h1></div></section>
+        <section class="surface about-surface">
+          <p class="about-lead">TaskFlow is a small, personal task manager built around one idea: a clear next step makes a busy day feel lighter.</p>
+          <div class="about-rule"></div>
+          <h2>Made to stay simple</h2>
+          <p>Create a task, give it a category, and check it off when it is done. Your dashboard keeps a quick count, and the task list lets you search and filter whenever you need to find something.</p>
+          <h2>Your tasks stay yours</h2>
+          <p>TaskFlow saves your task list and theme preference in this browser using localStorage. Nothing is sent to a server. Clearing this browser’s site data also clears your saved tasks.</p>
+          <a class="button-primary about-link" href="tasks.html">Go to your tasks <span aria-hidden="true">→</span></a>
+        </section>
+        <footer class="page-footer">Simple tasks<span class="footer-dot">.</span> Better days.</footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
